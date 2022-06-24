@@ -1,0 +1,112 @@
+header {
+    display: inline-block;
+    background: #EAC926;
+    width: 100%;
+
+}
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0;
+}
+.cuotas {
+    
+    display: inline;
+    text-align: center;
+}
+input {
+    margin: 5px 0 0 15px;
+    width: 60%;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+header img {
+    width: 50%;
+    margin: 15px;
+}
+a {
+    color: #000;
+    text-decoration: none;
+    margin: 5px 0 15px 15px;
+}
+
+.fas{
+    background-color: #1259c3;
+    padding: 10px;
+    border-radius: 8px;
+    color: #fff;
+    text-align: center;
+    margin: 10px 50%;
+}
+#search{
+    margin-left: 15px;
+    background-color: #ebebeb;
+    padding: 2px;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+#hand{
+    /* margin:20px 0 20px 20px; */
+}
+nav li{
+    display: inline;
+}
+img{
+    max-width: 100%;
+}
+footer{
+    margin-top: 30px;
+}
+.contenedor-cuotas{
+    text-align: center;
+}
+.contenedor--footer{
+    margin: 20px 15px;
+}
+.contenedor--footer h4{
+    font-size: 24px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.contenedor--footer p{
+    text-align: center;
+    font-size: 16px;
+    padding: 0 40px;
+}
+.contenedor--footer .fa-solid{
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 5px;
+    
+}
+.contenedor--logo{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.copyright{
+    margin-left: 15px;
+    color: #666;
+    margin-bottom: 20px;
+}
+h2{
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+}
+section .precio{
+    font-size: 18px;
+}
+section .descuento{
+    font-size: 16px;
+}
+.contenedor--descripcion--fotos{
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: #fff;
+    margin-top: -5px;
+}
+main{    
+    background-color: #ebebeb;
+}
