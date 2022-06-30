@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contenedor{
+    width: 80vw;
+    padding: 15px;
+    border: 5px solid red;
+}
+.contenedor--texto{
+    width: 100%;
+}

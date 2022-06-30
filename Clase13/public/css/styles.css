@@ -1,0 +1,172 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #ebebeb;
+}
+header {
+    display: inline-block;
+    background: #EAC926;
+    width: 100%;
+
+}
+
+.cuotas {
+    
+    display: inline;
+    text-align: center;
+}
+
+input {
+    margin: 5px 0 0 15px;
+    width: 60%;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+header img {
+    width: 50%;
+    margin: 15px;
+}
+a {
+    color: #000;
+    text-decoration: none;
+    margin: 5px 0 15px 15px;
+}
+
+.fas{
+    margin: 10px 0
+}
+.burger-menu{
+    margin: 30px auto;
+    background-color: #1259c3;
+    padding: 6px;
+    border-radius: 7px;
+    color: #fff;
+    text-align: center;
+    width: 50px;
+}
+#search{
+    margin-left: 6px;
+    background-color: #ebebeb;
+    padding: 2px;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+#hand{
+    /* margin:20px 0 20px 20px; */
+}
+nav li{
+    display: inline;
+}
+header ul{
+    display: none;
+}
+img{
+    max-width: 100%;
+    
+}
+footer{
+    margin-top: 60px;
+
+}
+.contenedor-cuotas{
+    text-align: center;
+    margin-top: 15px;
+}
+.contenedor--footer{
+    margin: 20px 15px;
+}
+.contenedor--footer h4{
+    font-size: 24px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.contenedor--footer p{
+    text-align: center;
+    font-size: 16px;
+    padding: 0 40px;
+}
+.contenedor--footer .fa-solid{
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 5px;
+    
+}
+.contenedor--logo{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.copyright{
+    margin-left: 15px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.descuento{
+    color: #39b54a;
+}
+section .precio{
+    font-size: 21px;
+    font-weight: 400;
+}
+section .descuento{
+    font-size: 16px;
+    font-weight: 400;
+}
+.contenedor--descripcion--fotos{
+    
+    background-color: #fff;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
+main{    
+    background-color: #ebebeb;
+    margin: auto;
+    width: 90vw;
+}
+.contenedor--articulo{
+    margin-bottom: 10px;
+    background-color: #fff;
+    
+
+}
+.contenedor--logo--articulo{
+    border: 1px solid #39b54a;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+.contenedor--logo--articulo i{
+    color: #39b54a;
+}
+.contenedor--foto--articulo{
+    text-align: center;
+}
+.h2--header{
+    font-size: 7.5vw;
+    font-weight: 500;
+    color: #666;
+    margin: 30px 0;
+}
+.descripcion{
+    display: none;
+}
+@media (min-width:361px){
+    .descripcion{
+        display:block;
+    }
+    header ul{
+        display: block;
+        margin-bottom: 20px;
+    }
+    .burger-menu{
+        display: none;
+    }
+    .contenedor--articulo{
+        box-shadow: 0px 0px 10px rgb(100 100 100);
+    }
+}
