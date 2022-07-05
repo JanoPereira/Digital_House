@@ -1,0 +1,378 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #ebebeb;
+}
+header {
+    background: #EAC926;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor--imagen{
+    
+    width: 50vw;
+
+}
+.cuotas {
+    display: inline;
+    text-align: center;
+    font-size: 12px;
+}
+
+input {
+    width: 85%;
+    border-radius: 5px;
+    padding: 5px 4px;
+    border: none;
+    outline: none;
+}
+header img {
+    margin: 15px 0 0 15px;
+    width: 86%;
+}
+.contenedor--busqueda{
+    border-radius: 10px;
+    position: relative;
+    width: 50vw;
+}
+a {
+    color: #000;
+    text-decoration: none;
+    margin: 5px 0 15px 15px;
+}
+
+.fas{
+    margin: 10px 0
+}
+.burger-menu{
+    margin: 30px auto;
+    background-color: #1259c3;
+    padding: 6px;
+    border-radius: 7px;
+    color: #fff;
+    text-align: center;
+    width: 50px;
+}
+#search{
+    color: #666;
+    padding: 2px;
+    border-radius: 5px;
+    font-size: 17px;
+    background-color: #fff;
+    position: absolute;
+    right: 25px;
+    top: 3px;
+}
+
+}
+#hand{
+    /* margin:20px 0 20px 20px; */
+}
+nav li{
+    display: inline;
+}
+header ul{
+    display: none;
+}
+img{
+    max-width: 100%;
+    
+}
+footer{
+    margin-top: 60px;
+
+}
+.contenedor-cuotas{
+    text-align: center;
+    margin-top: 15px;
+    width: 100vw;
+}
+.contenedor--footer{
+    margin: 20px 15px;
+}
+.contenedor--footer h4{
+    font-size: 24px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.contenedor--footer p{
+    text-align: center;
+    font-size: 16px;
+    padding: 0 40px;
+}
+.contenedor--footer .fa-solid{
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 5px;
+    
+}
+.contenedor--logo{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.copyright{
+    margin-left: 15px;
+    color: #666;
+    margin-bottom: 20px;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section .precio{
+    font-size: 21px;
+    font-weight: 400;
+    flex-grow: .3;
+}
+section .descuento{
+    font-size: 16px;
+    font-weight: 400;
+    flex-grow: .7;
+    color: #39b54a;
+    
+}
+.contenedor--descripcion--fotos{
+    
+    background-color: #fff;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    position: relative;
+}
+main{    
+    background-color: #ebebeb;
+    margin: auto;
+    width: 90vw;
+}
+.contenedor--articulo{
+    margin-bottom: 10px;
+    background-color: #fff;
+    
+    
+
+}
+.contenedor--logo--articulo{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+} 
+.contenedor--logo--articulo i{
+    color: #39b54a;
+}
+
+.h2--header{
+    font-size: 7.5vw;
+    font-weight: 500;
+    color: #666;
+    margin: 30px 0;
+}
+.descripcion{
+    display: none;
+}
+@media (min-width:361px){
+    .descripcion{
+        display:block;
+        color: #666;
+        margin-top: 10px;
+        font-size: 18px;
+    }
+    header{
+        justify-content: space-around;
+    }
+    header ul{
+        display: block;
+        margin-bottom: 20px;
+    }
+    .burger-menu{
+        display: none;
+    }
+    .contenedor--articulo{
+        box-shadow: 0px 0px 10px rgb(100 100 100);
+        max-width: 45%;
+        
+    }
+    .h2--header{
+        width: 100%;
+        font-size: 4.5vw;
+    }
+    nav{
+        margin: auto;
+        margin-top: 20px;
+        display: block;
+        width: 100vw;
+        max-width: 520px;
+        text-align: center;
+    }
+    nav ul{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+    }
+    nav a{
+        font-size: 8px;
+        margin: 0;
+    }
+    nav li i{
+        font-size: 12px;
+    }
+    
+    .contenedor--imagen{
+        width: 30vw;
+        
+    }
+    header img{
+        margin: 15px 0 0 0px;
+        width: 100%;
+    }
+    
+    .contenedor--busqueda{
+        width: 35vw;
+        text-align: center;
+        max-width: 138px;
+    }
+    .contenedor-cuotas{
+        width: 35vw;
+        text-align: right;
+        max-width: 188px;
+    }
+    #search{
+        position: static;
+        margin-top: 13px;
+        font-size: 12px;    
+    }
+    .contenedor--busqueda input{
+        margin-left: 0;
+        width: 70%;
+        max-width: 160px;
+        font-size: 9px;
+    }
+    .cuotas{
+        font-size: 9px;
+    }
+    .contenedor-cuotas .fa-solid{
+        font-size: 12px;
+    }
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .contenedor--footer{
+        width: 30vw;
+        margin: 0 5px;
+    }
+    .contenedor--logo i{
+        font-size: 22px;
+    }
+    .contenedor--footer h4{
+        font-size: 15px;
+    }
+    .contenedor--footer p{
+        font-size: 12px;
+        line-height: 1.5;
+        padding: 0;
+    }
+    .copyright{
+        text-align: center;
+        width: 100vw;
+        margin-top: 30px;
+    }
+    
+}
+@media (min-width:769px){
+    .contenedor--articulo{
+        max-width: 22%;
+    }
+    .h2--header{
+        font-size: 4.5vh;
+    }
+    .seccion--precio{
+        font-size: 18px;
+    }
+    .descuento{
+        font-size: 14px;
+    }
+    .descripcion{
+        font-weight: 300;
+    }
+    .contenedor--imagen{
+        max-width: 270px;
+    }
+    .contenedor--busqueda{
+        max-width: 296px;
+    }
+    .contenedor--busqueda input{
+        font-size: 12px;
+        max-width: 190px;
+    }
+    #search{
+        font-size: 16px;
+    }
+    .contenedor-cuotas{
+        max-width: 260px;
+    }
+    .contenedor-cuotas p{
+        font-size: 12px;
+    }
+
+    nav{
+        max-width: 1000px;
+    }
+    nav ul{
+        justify-content: space-around;
+    }
+    nav a{
+        font-size: 12px;
+        margin: 0;
+    }
+    nav li i{
+        font-size: 13px;
+    }
+    .contenedor--banner{
+        display: block;
+        height: 150px
+    ;
+    }
+    .contenedor--banner img{
+        width: 100%;
+        max-height: 150px;
+        object-fit: cover;
+    }
+    section .descuento{
+        text-align: end;
+        flex-grow: none;
+        font-size: 13px;
+    }
+    .contenedor--descripcion--fotos .descripcion{
+        font-size: 15px;
+    }
+    .contenedor--footer p{
+        padding: 0 20px;
+    }
+}
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    
+    }
+.contenedor--numeros{
+    display: flex;
+    align-items: center;
+}
