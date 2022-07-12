@@ -34,7 +34,7 @@ header input {
     outline: none;
 }
 header img {
-    margin: 15px 0 0 15px;
+    margin: 15px 0 0 0;
     width: 86%;
 }
 .contenedor--busqueda{
@@ -72,7 +72,7 @@ a {
     cursor: pointer;
 }
 
-}
+
 #hand{
     /* margin:20px 0 20px 20px; */
 }
@@ -99,13 +99,13 @@ footer{
     margin: 20px 15px;
 }
 .contenedor--footer h4{
-    font-size: 24px;
+    font-size: 18px;
     margin-bottom: 5px;
     text-align: center;
 }
 .contenedor--footer p{
     text-align: center;
-    font-size: 16px;
+    font-size: 12px;
     padding: 0 40px;
 }
 .contenedor--footer .fa-solid{
@@ -147,6 +147,7 @@ section .descuento{
     border-top: 1px solid #ebebeb;
     padding: 15px;
     position: relative;
+    transition: all 1s linear;
 }
 main{    
     background-color: #ebebeb;
@@ -156,7 +157,8 @@ main{
 .contenedor--articulo{
     margin-bottom: 10px;
     background-color: #fff;
-    
+    transition: all .3s linear;
+
     
 
 }
@@ -180,12 +182,21 @@ main{
 .descripcion{
     display: none;
 }
+.contenedor-botones{
+    display: none;
+}
+.botones-movile{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
 @media (min-width:361px){
     .descripcion{
         display:block;
         color: #666;
         margin-top: 10px;
-        font-size: 18px;
+        font-size: 13px;
     }
     header{
         justify-content: space-around;
@@ -198,7 +209,7 @@ main{
         display: none;
     }
     .contenedor--articulo{
-        box-shadow: 0px 0px 10px rgb(100 100 100);
+        transition: all 1s;
         max-width: 45%;
         
     }
@@ -232,6 +243,9 @@ main{
         width: 30vw;
         
     }
+    .contenedor--imagen a{
+        margin-left: 0%;
+    }
     header img{
         margin: 15px 0 0 0px;
         width: 100%;
@@ -243,9 +257,10 @@ main{
         max-width: 138px;
     }
     .contenedor-cuotas{
-        width: 37vw;
+        width: 36vw;
         text-align: right;
         max-width: 188px;
+        margin-right: 3px;
     }
     #search{
         position: static;
@@ -289,6 +304,18 @@ main{
         width: 100vw;
         margin-top: 30px;
     }
+    .botones-movile{
+        display: none;
+    }
+    .contenedor-botones{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 10px;
+    }
+    .contenedor-botones a{
+        margin: 0;
+    } 
     
 }
 @media (min-width:500px){
@@ -308,9 +335,11 @@ main{
     }
     .descuento{
         font-size: 14px;
+        
     }
     .descripcion{
         font-weight: 300;
+        display: none;
     }
     .contenedor--imagen{
         max-width: 270px;
@@ -381,4 +410,95 @@ main section article i{
 .contenedor--numeros{
     display: flex;
     align-items: center;
+}
+
+.contenedor--articulo:hover > .contenedor--descripcion--fotos > .descripcion {
+    display: block;
+}
+.contenedor--articulo:hover {
+    box-shadow: 0px 0px 10px rgb(100 100 100);
+}
+.contenedor--articulo:hover > .contenedor--descripcion--fotos > .contenedor--logo--articulo > i{
+    animation-name: rotacion;
+    animation-duration: 2s;
+    
+}
+
+@keyframes rotacion{
+    0%{
+
+    }
+    100%{
+        transform: rotate(-360deg)
+    }
+}
+/* REGISTRO */
+
+.formulario{
+    
+    background: #fff;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    width: 65%;
+    margin: 20px auto;
+}
+#formulario-registro{
+    max-width: 450px;
+}
+.contenedor-categorias-interes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contenedor-categorias-interes div{
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+#formulario-login{
+    width: 75%;
+    max-width: 250px;
+}
+#formulario-login a{
+    margin: 0;
+}
+.label-titulo{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.formulario button{
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.formulario button:hover{
+    background-color: #0022AA;
+    color: #fff;
+}
+
+.contenedor--logo i:hover {
+    color: #000;
+}
+.formulario input[type="text"],.formulario input[type="password"],.formulario input[type="date"]{
+    padding: 5px;
+    border-radius: 15px;
+}
+input[type='file']{
+    display: none;
+}
+#boton-seleccionar-archivo{
+    padding: 5px;
+    border-radius: 15px;
+    border: 1px solid #222;
+    cursor: pointer;
+    background-color: #efefef;
+}
+#boton-seleccionar-archivo:hover{
+    background-color: #0022AA;
+    color: #fff;
+    box-shadow: 1px 1px 1px 1px #222;
+}
+.boton{
+    cursor: pointer;
 }
